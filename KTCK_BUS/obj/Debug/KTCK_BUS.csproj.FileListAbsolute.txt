@@ -1,0 +1,13 @@
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\KTCK_BUS.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\KTCK_BUS.pdb
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\obj\Debug\KTCK_BUS.csproj.AssemblyReference.cache
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\obj\Debug\KTCK_BUS.csproj.CoreCompileInputs.cache
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\obj\Debug\KTCK_BUS.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\obj\Debug\KTCK_BUS.pdb
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\KTCK_BUS.dll.config
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\KTCK_DAL.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\EntityFramework.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\KTCK_DAL.pdb
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\KTCK_DAL.dll.config
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\bin\Debug\EntityFramework.xml
+C:\Users\thanh\source\repos\LTWinform\KTCK_BUS\obj\Debug\KTCK_BUS.csproj.Up2Date

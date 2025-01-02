@@ -1,0 +1,12 @@
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\KTCK_DAL.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\KTCK_DAL.pdb
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\obj\Debug\KTCK_DAL.csproj.AssemblyReference.cache
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\obj\Debug\KTCK_DAL.csproj.CoreCompileInputs.cache
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\obj\Debug\KTCK_DAL.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\obj\Debug\KTCK_DAL.pdb
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\KTCK_DAL.dll.config
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\EntityFramework.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\EntityFramework.xml
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thanh\source\repos\LTWinform\KTCK_DAL\obj\Debug\KTCK_DAL.csproj.Up2Date
