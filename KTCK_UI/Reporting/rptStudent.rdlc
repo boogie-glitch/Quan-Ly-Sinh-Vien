@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>e3d54aa8-945e-46e9-b373-83341b668fbd</rd:DataSourceID>
+      <rd:DataSourceID>445d3463-5f4f-4940-bdd2-7b4397b63c7e</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -29,18 +29,18 @@
           <DataField>DateOfBirth</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="CourseID">
-          <DataField>CourseID</DataField>
+        <Field Name="CourseName">
+          <DataField>CourseName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>QLKHDataSet</rd:DataSetName>
         <rd:SchemaPath>C:\Users\thanh\source\repos\LTWinform\KTCK_UI\QLKHDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Students</rd:TableName>
+        <rd:TableName>StudentCourse</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>StudentsTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>StudentCourseTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -48,27 +48,27 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="Ngay">
+          <Textbox Name="Textbox1">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Parameters!Ngay.Value</Value>
+                    <Value>Thống kê sinh viên</Value>
                     <Style>
-                      <Format>M/d/yyyy</Format>
+                      <FontSize>18pt</FontSize>
+                      <Color>Blue</Color>
                     </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Ngay</rd:DefaultName>
-            <Top>0.56125in</Top>
-            <Left>2.70708in</Left>
-            <Height>0.25in</Height>
-            <Width>1in</Width>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Left>2.29563in</Left>
+            <Height>0.38542in</Height>
+            <Width>2.38021in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -79,28 +79,25 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox2">
+          <Textbox Name="Ngay">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Thông tin sinh viên</Value>
-                    <Style>
-                      <FontSize>16pt</FontSize>
-                      <Color>Blue</Color>
-                    </Style>
+                    <Value>=Parameters!Ngay.Value</Value>
+                    <Style />
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>0.1984in</Top>
-            <Left>2.0837in</Left>
-            <Height>0.30729in</Height>
-            <Width>2.24479in</Width>
+            <rd:DefaultName>Ngay</rd:DefaultName>
+            <Top>0.56125in</Top>
+            <Left>2.94146in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -116,16 +113,16 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.39844in</Width>
+                  <Width>1.46615in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.39844in</Width>
+                  <Width>1.46615in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.69172in</Width>
+                  <Width>1.46615in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.69172in</Width>
+                  <Width>1.46615in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -134,7 +131,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox15">
+                        <Textbox Name="Textbox8">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -148,7 +145,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -164,21 +161,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox13">
+                        <Textbox Name="Textbox10">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Họ tên</Value>
+                                  <Value>Họ Tên</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -194,21 +191,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox9">
+                        <Textbox Name="Textbox14">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Ngày sinh</Value>
+                                  <Value>Ngày Sinh</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -224,21 +221,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox7">
+                        <Textbox Name="Textbox12">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Tên khóa học</Value>
+                                  <Value>Tên Khóa Học</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -327,9 +324,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!DateOfBirth.Value</Value>
-                                  <Style>
-                                    <Format>d</Format>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -347,26 +342,25 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CourseID">
+                        <Textbox Name="CourseName">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!TenKhoaHoc.Value</Value>
+                                  <Value>=Fields!CourseName.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>CourseID</rd:DefaultName>
+                          <rd:DefaultName>CourseName</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -403,10 +397,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>dataStudent</DataSetName>
-            <Top>1.30604in</Top>
-            <Left>0.30604in</Left>
+            <Top>1.17063in</Top>
+            <Left>0.67584in</Left>
             <Height>0.5in</Height>
-            <Width>6.18032in</Width>
+            <Width>5.86458in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -415,11 +409,13 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.53125in</Height>
+        <Height>2in</Height>
         <Style />
       </Body>
-      <Width>6.78646in</Width>
+      <Width>7.27477in</Width>
       <Page>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
@@ -433,10 +429,6 @@
       <DataType>DateTime</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="TenKhoaHoc">
-      <DataType>String</DataType>
-      <Prompt>ReportParameter1</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
@@ -448,14 +440,9 @@
           <RowIndex>0</RowIndex>
           <ParameterName>Ngay</ParameterName>
         </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>TenKhoaHoc</ParameterName>
-        </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>36a6271b-56bc-40a1-b5de-c17b405795cc</rd:ReportID>
+  <rd:ReportID>84cb7623-64c1-4f38-93e5-42021d104484</rd:ReportID>
 </Report>

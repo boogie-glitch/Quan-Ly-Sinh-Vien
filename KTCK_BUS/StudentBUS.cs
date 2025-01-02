@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using KTCK_DAL.EntitiesDB;
-using KTCK_DAL.DTO;
 using KTCK_DAL;
 
 namespace KTCK_BUS
@@ -33,7 +32,7 @@ namespace KTCK_BUS
         {
             studentDAL.DeleteStudent(id);
         }
-        public List<StudentDTO> GetListByCourse(string courseID)
+        public List<Student> GetListByCourse(string courseID)
         {
             return studentDAL.GetListByCourse(courseID);
         }

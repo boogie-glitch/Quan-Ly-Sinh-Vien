@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\StudentDTO.cs" />
     <Compile Include="EntitiesDB\Cours.cs" />
     <Compile Include="EntitiesDB\QLKHModelDB.cs" />
     <Compile Include="EntitiesDB\Student.cs" />

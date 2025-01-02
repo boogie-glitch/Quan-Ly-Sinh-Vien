@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using KTCK_DAL.EntitiesDB;
-using KTCK_DAL.DTO;
 
 namespace KTCK_DAL
 {
@@ -38,18 +37,9 @@ namespace KTCK_DAL
             context.Students.Remove(s);
             context.SaveChanges();
         }
-        public List<StudentDTO> GetListByCourse(string courseID)
+        public List<Student> GetListByCourse(string courseID)
         {
-            var list = from student in context.Students
-                       where student.CourseID == courseID
-                       select new StudentDTO
-                       {
-                           Id = student.StudentID,
-                           Name = student.StudentName,
-                           DateOfBirth = student.DateOfBirth,
-                           CourseID = student.CourseID
-                       };
-            return list.ToList();
+            return context.Students.Where(s => s.CourseID == courseID).ToList();
         }
     }
 }

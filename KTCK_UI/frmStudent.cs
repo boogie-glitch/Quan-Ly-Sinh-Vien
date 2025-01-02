@@ -152,7 +152,6 @@ namespace KTCK_UI
 
         private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Hiển thị thông tin sinh viên từ ô được chọn trong datagridview lên các textbox
             if (e.RowIndex < 0)
             {
                 return;

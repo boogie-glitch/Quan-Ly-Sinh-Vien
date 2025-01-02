@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Reporting.WinForms;
-using KTCK_DAL.DTO;
 using KTCK_DAL.EntitiesDB;
 using KTCK_BUS;
 
@@ -37,15 +36,21 @@ namespace KTCK_UI.Reporting
         private void cmbCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
             string courseID = cmbCourse.SelectedValue.ToString();
-            List<StudentDTO> studentDTOs = studentBUS.GetListByCourse(courseID);
-            ReportParameter[] rP = new ReportParameter[2];
+            List<Student> students = studentBUS.GetListByCourse(courseID);
+            var studentList = from student in students
+                              select new
+                              {
+                                  StudentID = student.StudentID,
+                                  StudentName = student.StudentName,
+                                  DateOfBirth = student.DateOfBirth,
+                                  CourseName = courseBUS.GetCours(student.CourseID).CourseName
+                              };
+            ReportParameter[] rP = new ReportParameter[1];
             rP[0] = new ReportParameter("Ngay", DateTime.Now.ToString("dd/MM/yyyy"));
-            var course = courseBUS.GetCours(courseID);
-            string courseName = course != null ? course.CourseName : " ";
-            rP[1] = new ReportParameter("TenKhoaHoc", courseName);
+
             this.reportViewer1.LocalReport.SetParameters(rP);
             this.reportViewer1.LocalReport.DataSources.Clear();
-            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("dataStudent", studentDTOs));
+            this.reportViewer1.LocalReport.DataSources.Add(new ReportDataSource("dataStudent", studentList));
             this.reportViewer1.RefreshReport();
         }
     }
